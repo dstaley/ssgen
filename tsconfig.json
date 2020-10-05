@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2019",
+    "outDir": "./lib",
+    "esModuleInterop": true
+  },
+  "include": ["./src"]
+}

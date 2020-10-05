@@ -1,0 +1,6 @@
+@use "./variables";
+@use "./syntax";
+
+body {
+  color: variables.$primary-color;
+}

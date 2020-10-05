@@ -1,0 +1,16 @@
+{% extends "./base.njk" %}
+
+{% block main %}
+    {{ content | safe }}
+    {% for post in posts | sort(true, false, 'date') %}
+        <div>
+            <p>{{ post.frontmatter.date | dateFormat("PP") }}</p>
+            <a href="{{ post.permalink }}">
+                <h2>{{ post.frontmatter.title }}</h2>
+            </a>
+            {% if post.frontmatter.subtitle %}
+                <p>{{ post.frontmatter.subtitle }}</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+{% endblock %}

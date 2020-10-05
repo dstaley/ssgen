@@ -1,0 +1,17 @@
+@each $class, $color in syntaxThemeMap() {
+  .#{$class} {
+    color: $color;
+  }
+}
+
+.mtkb {
+  font-weight: bold;
+}
+
+.mtki {
+  font-style: italic;
+}
+
+.mtku {
+  text-decoration: underline;
+}

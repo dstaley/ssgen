@@ -1,0 +1,14 @@
+{% extends "./base.njk" %}
+
+{% block main %}
+    <article>
+        <div>
+            <p>{{ date | dateFormat("PP") }}</p>
+            <h1>{{ title }}</h1>
+            {% if subtitle %}
+                <p>{{ subtitle }}</p>
+            {% endif %}
+        </div>
+        <main>{{ content | safe }}</main>
+    </article>
+{% endblock %}
