@@ -335,7 +335,7 @@ export default class Generator {
 
     const { highlighter } = this;
 
-    const posts = Object.values(this.renderedPosts)
+    const posts = Array.from(this.renderedPosts.values())
       .filter((p) => p.layout === "post")
       .sort(sortPostsByDate);
 
