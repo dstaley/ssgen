@@ -10,6 +10,7 @@
   "bin": {
     "ssgen": "./bin/ssgen"
   },
+  "files": ["/lib", "/bin"],
   "keywords": [],
   "author": "",
   "license": "ISC",
